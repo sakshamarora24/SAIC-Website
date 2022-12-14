@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head-extension %}
+
+{% endblock %}
+{% block content %}
+
+
+<main style="background-color: black;">
+    <style type="text/css">
+        .w {
+            color: white;
+        }
+        body {
+            background: black !important;
+        }
+    </style>
+    <!--? Hero Start -->
+    <div class="slider-area2" align="center">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 text-center pt-70">
+                            <h2>Register</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!--? Contact form Start -->
+    <div class="contact-form-main mt-100 mb-100">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="form-wrapper">
+                        <!--Section Tittle  -->
+                        <div class="form-tittle" style="background-color: black;">
+                            <div class="row ">
+                                <div class="col-lg-11 col-md-10 col-sm-10">
+                                    <div>
+
+                                        <button onclick="openCity('contact-form')" id="btn_2"
+                                            style="background-color: red; border-width: 1px; border-radius: 8px;"
+                                            class="btn"><span>Signup</span></button>
+
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        <button onclick="openCity('contact-form1')" id="btn_1"
+                                            style="background-color: black; border-width: 1px; border-radius: 8px;"
+                                            class="btn"><span>Login</span></button>
+
+
+                                        <!--  <button onclick="openCity('contact-form1')"><span>LogIn</span></button> -->
+                                        <!-- <h2>Feel Free to contact with us!</h2> -->
+
+                                    </div>
+                                    {% if message %}
+                                    <br><br>
+                                    <span style="font-size:1.7rem;" class="alert alert-primary">{{ message }}</span>
+                                    <br><br>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--End Section Tittle  -->
+                        <form id="contact-form" class="city" action="#" method="POST"
+                            style="background-color: black; color: white;">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-box user-icon mb-30">
+                                        <input style="color: white;" type="text" name="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-box email-icon mb-30">
+                                        <input style="color: white;" type="number" name="phone" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-box email-icon mb-30">
+                                        <input style="color: white;" type="number" name="rollno"
+                                            placeholder="Roll Number">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-box subject-icon mb-30">
+                                        <input style="color: white;" type="Email" name="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-110">
+                                    <div class="form-box subject-icon mb-30">
+                                        <input style="color: white;" type="Password" name="password"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-box subject-icon mb-120">
+                                        <input style="color: white;" type="Password" name="cpassword"
+                                            placeholder="Confirm Password">
+
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <input type="checkbox" id="check" name="isSubscribed" checked="true"
+                                            value="check" style="height: 25px; width: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        <label for="check" style="font-size: 2rem;">Subscribe to the newsletter</label>
+                                    </div>
+                                    <!-- <div class="form-box subject-icon mb-20"> -->
+
+                                    <!-- </div>
+                                         -->
+                                    <div class="submit-info">
+                                        <button name="signup" class="btn" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="contact-form1" class="city" action="#" method="POST"
+                            style="background-color: black; color: white; display: none;">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-12 mb-150">
+                                    <div class="form-box subject-icon mb-30">
+                                        <input style="color: white;" type="Email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-box subject-icon mb-120">
+                                        <input style="color: white;" type="Password" name="password"
+                                            placeholder="Password">
+                                    </div>
+
+                                    <div class="submit-info">
+                                        <button name="signin" class="btn" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact left Img-->
+        <div class="from-left d-none d-lg-block">
+            <img src="{% static 'img/2.png' %}" alt="">
+        </div>
+    </div>
+    <!-- Contact form End -->
+</main>
+
+{% block body-end %}
+<script type="text/javascript">
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+        if (cityName == "contact-form") {
+            document.getElementById('btn_2').style.backgroundColor = "red";
+            document.getElementById('btn_1').style.backgroundColor = "black";
+        }
+        else {
+            document.getElementById('btn_1').style.backgroundColor = "red";
+            document.getElementById('btn_2').style.backgroundColor = "black";
+        }
+    }
+</script>
+{% endblock %}
+{% endblock %}

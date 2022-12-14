@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+<main>
+        <!--? Hero Start -->
+        <div class="slider-area2" align="center" data-background="{% static 'img/covidhelp.png' %}" >
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 text-center pt-70">
+                                <h2>COVID- 19 RELIEF FUND</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+    <!--? About Area Start -->
+    <section class="about-area section-padding30">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <!-- about-img -->
+            <div class="about-img ">
+              <img src="{%static 'img/covidhelp1.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="about-caption">
+              <!-- Section Tittle -->
+              <div class="section-tittle section-tittle3 mb-35">
+                <span>THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY</span>
+                <h2>COVID-19 EMERGENCY RELIEF FUND</h2>
+              </div>
+              <p class="mb-20 pera-bottom">During these troublesome COVID-19 times, TIET has stepped up to assist deprived
+                                        patients by providing assets to NGOs for the acquisition of oxygen
+                                        cylinders/concentrators. We encourage the Alumni and students of TIET to donate
+                                        and help those in need.</p>
+              <p class="pera-top">DONATE AT</p>
+              <p class="mb-10 pera-bottom">Name of the beneficiary:<a style="color: black; cursor: pointer;" title="Copy Text" id="text1" onclick="copyElementText(this.id)">THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY</a></p>
+              <p class="mb-10 pera-bottom">A/c No: <a style="color: black; cursor: pointer;" title="Copy Text" id="text2" onclick="copyElementText(this.id)">676010011622</a></p>
+              <p class="mb-10 pera-bottom">IFSC Code: <a style="color: black; cursor: pointer;" title="Copy Text" id="text3" onclick="copyElementText(this.id)">KKBK0000263</a></p>
+              <p class="mb-10 pera-bottom">Bank Name: <a style="color: black; cursor: pointer;" title="Copy Text" id="text4" onclick="copyElementText(this.id)">Kotak Mahindra Bank Ltd</a></p>
+              <p class="pera-top">Send us a mail with the snapshot of the transaction at <a href="mailto:headalumni@thapar.edu" style="color: black;">headalumni@thapar.edu</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+   {% endblock %}
+
+   {% block body-end %}
+<script>
+
+  function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+    alert("Copied to clipboard!")
+}
+
+</script>
+{% endblock %}

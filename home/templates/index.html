@@ -1,0 +1,346 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<head>
+
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        overflow-x:hidden !important;
+    }
+    .banner{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner video{
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        pointer-events: none;
+        
+    }
+    .banner span::before {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 2px;
+        background: #f04e3c;
+        transform: translateY(-200%);
+        left: 0;
+        top:  93%;
+}
+    .anime-content
+    {
+        top: 10%;
+        left: -25%;
+        position: relative;
+        z-index: 1;
+        max-width: 500px;
+        margin: 0;
+        text-align: left;
+        font-family: teko,sans-serif;
+    }
+    @media screen and ( max-width: 425px ) {
+      .anime-content{
+        left: 0 !important;
+        padding-left: 20px;
+        padding-right: 20px;
+
+      }
+      
+    }
+
+</style>
+<body>
+    <div class="banner">
+        <video autoplay muted loop >
+
+            <source src="{% static 'img/video.mp4' %}" type="video/mp4">
+
+        </video>
+        <div class="anime-content" >
+          <h1 style="color: white; font-size: 40px;" ><strong>AN AMALGAMATION OF <br>ACADEMIA AND THE <br>COMMERCIAL WORKFRONT. </strong></h1>
+          <span style="color: red;font-size: 24px;padding-left: 100px;">ARMY OF PROFESSIONALS</span>
+        </div>
+        <!--
+        <div class="anime-content">
+          <h1 data-animation="fadeInLeft" data-delay="0.4s" style="z-index: 1;">invariably make it memorable for all the batches to come.</h1>
+          <span data-animation="fadeInLeft" data-delay="0.1s" style="z-index: 1;">Army of professionals</span>
+        </div>
+
+
+        <div class="anime-content">
+          <h1 data-animation="fadeInLeft" data-delay="0.4s" style="z-index: 1;">invariably make it memorable for all the batches to come.</h1>
+          <span data-animation="fadeInLeft" data-delay="0.1s" style="z-index: 1;">Army of professionals</span>
+        </div>
+      -->
+
+    </div>
+    
+</body>
+<main>
+
+  <!-- slider Area End-->
+  <!--? About Area Start -->
+  <section class="about-area section-padding30">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <!-- about-img -->
+          <div class="about-img ">
+            <img src="{% static 'assets/img/gallery/farewell.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-caption">
+            <!-- Section Tittle -->
+            <div class="section-tittle section-tittle3 mb-35">
+              <span>LATEST UPDATES</span>
+              <h2>“The two hardest things to say in life are hello for the first time and goodbye for the last.”</h2>
+            </div>
+            <p class="pera-top">Farewell, a word with multiple feelings. On one side showing excitement and zeal while on the other some bittersweet memories of departure. SAIC holds the honour of hosting farewell every year for the final year students but this year the good byes were said online.</p>
+            <p class="pera-bottom">As the Thapar legacies continue, the farewells do too. As of this years farewell, lets wait and watch!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section style="padding-bottom: 180px;" class="about-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <!-- about-img -->
+          <div class="about-img ">
+            <a href="https://thapar.almaconnect.com" target="_blank"><img src="{% static '/img/gallery/Alma.jpg' %}" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-caption">
+            <!-- Section Tittle -->
+            <div class="section-tittle section-tittle3 mb-35">
+                <span>LATEST UPDATES</span>
+              <h2>ALMA CONNECT</h2>
+            </div>
+            <p class="pera-top">Thapar Institute of Engineering and Technology has paved the way for young minds to succeed in life over the last 65 years and built an indelible legacy. With over 30,000 alumni all across the globe, we would like to bridge the boundaries and help our alumni connect with AlmaConnect.</p>
+              <p class="pera-top">AlmaConnect is an alumni networking platform that helps strengthen relations by establishing a network for placements, branding, fundraising and much more.</p>
+              <p class="mb-30 pera-bottom">AlmaConnect will take interactions to the next level, while powering over 5000 alumni communities and 1,000,000 users.</p>
+              <p class="mb-30 pera-bottom">Join now at- <u><a class="mb-30 pera-bottom" href="https://thapar.almaconnect.com" target="_blank">https://thapar.almaconnect.com</a></u></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About-2 Area End -->
+  <!--? Services Area Start -->
+  <section class="services-area pt-100 pb-150 section-bg" data-background="{% static 'img/gallery/bg.png' %}">
+    <!--? Want To work -->
+    <section class="wantToWork-area w-padding">
+      <div class="container">
+        <div class="row align-items-end justify-content-between">
+          <div class="col-lg-6 col-md-10 col-sm-10">
+            <div class="section-tittle section-tittle2">
+              <span>OUR FLAGSHIP EVENTS</span>
+              <h2>meticulously planned events that are a conclave of modern innovation</h2>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-3">
+            <a href="{% url 'gallery' %}" class="btn wantToWork-btn f-right">Other Events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Want To work End -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="single-cat text-center mb-50">
+            <div class="cat-icon">
+            </div>
+            <div class="cat-cap">
+              <h5><a href="{% url 'troubleshoot' %}">TROUBLESHOOT</a></h5>
+              <p>Troubleshoot, a simulation of Crisis and Economic Contraction, set within a formal environment which
+                gives the participants the opportunity to experience real-time crisis.</p>
+            </div>
+            <div class="img-cap">
+              <a href="{% url 'troubleshoot' %}" class="">Read More <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="single-cat text-center mb-50">
+            <div class="cat-icon">
+            </div>
+            <div class="cat-cap">
+              <h5><a href="{% url 'exordium' %}">EXORDIUM</a></h5>
+              <p>Fun, growth, networking and gala all at one place! SAIC’s official freshers – the EXORDIUM! All of it,
+                all at once! Get to know the world of SAIC through the lenses of the college Alumnus.</p>
+            </div>
+            <div class="img-cap">
+              <a href="{% url 'exordium' %}" class="">Read More<i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="single-cat text-center mb-50">
+            <div class="cat-icon">
+            </div>
+            <div class="cat-cap">
+              <h5><a href="{% url 'GLS' %}">GLOBAL LEADERSHIP SUMMIT</a></h5>
+              <p>Global Leadership Summit is a conclave that brings to you a panel of recognised professionals who have
+                established themselves in the growing competition of vast sectors.</p>
+            </div>
+            <div class="img-cap">
+              <a href="{% url 'GLS' %}" class="">Read More <i class="ti-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Area End -->
+  <!--? About-2 Area Start -->
+  <section class="about-area2 testimonial-area section-padding30 fix">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-sm-11">
+          <div class="img-testimonial-active">
+            <div class="about-img2">
+              <img src="{% static 'img/gallery/about2.png' %}" alt="">
+              <div class="shape-qutaion d-none d-sm-block">
+                <img src="{% static 'img/gallery/qutaion.png' %}" alt="">
+              </div>
+            </div>
+            <div class="about-img2">
+              <img data-lazy="{% static 'img/gallery/about1.png' %}" alt="">
+              <div class="shape-qutaion d-none d-sm-block">
+                <img src="{% static 'img/gallery/qutaion.png' %}" alt="">
+              </div>
+            </div>
+            <div class="about-img2">
+              <img data-lazy="{% static 'img/gallery/about3.png' %}" alt="">
+              <div class="shape-qutaion d-none d-sm-block">
+                <img src="{% static 'img/gallery/qutaion.png' %}" alt="">
+              </div>
+            </div>
+            <div class="about-img2">
+              <img data-lazy="{% static 'img/gallery/about4.png' %}" alt="">
+              <div class="shape-qutaion d-none d-sm-block">
+                <img src="{% static 'img/gallery/qutaion.png' %}" alt="">
+              </div>
+            </div>
+            <div class="about-img2">
+              <img data-lazy="{% static 'img/gallery/about5.png' %}" alt="">
+              <div class="shape-qutaion d-none d-sm-block">
+                <img src="{% static 'img/gallery/qutaion.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-9">
+          <div class="about-caption">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-55">
+              <span>Alumni Quotes</span>
+              <h2>Message from our Alumni</h2>
+            </div>
+            <!-- Testimonial Start -->
+            <div class="h1-testimonial-active">
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="testimonial-caption">
+                  <p>"The art of writing is the art of discovering what you believe."</p>
+                  <div class="rattiong-caption">
+                    <span>Raghav Ralhan<span>Senior Manager, Tata Motors </span></span>
+                      <span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="testimonial-caption">
+                  <p>"College is not like a Bollywood movie but it’s about creating one."</p>
+                  <div class="rattiong-caption">
+                      <span>Aditi Saini Chakravarty<span>Marketing Head, Reebok</span></span>
+{#                      <span>Batch of 2002</span>#}
+                  </div>
+                </div>
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="testimonial-caption">
+                  <p>"Sweating over grades is not as important as learning different things by being inquisitive, creative and independent."</p>
+                  <div class="rattiong-caption">
+                    <span>Rahul Gupta<span>Enterprise Sales, Google Cloud</span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="testimonial-caption">
+                  <p>"Taking pride in those little moments which become memories is all part of the college journey."</p>
+                  <div class="rattiong-caption">
+                    <span>Vaibhav Gupta<span>Product Manager, Zomato</span></span>
+                  </div>
+                </div>
+              </div>
+                <!-- Single Testimonial -->
+              <div class="single-testimonial">
+                <div class="testimonial-caption">
+                  <p>"It takes time for things to happen and it does not matter if you bloom now or sometime later in life."</p>
+                  <div class="rattiong-caption">
+                    <span>Gaurav Seth<span>Vice President, Paytm</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About-2 Area End -->
+  <!--? Want To work -->
+  
+  <!-- Team Ara End -->
+  <!--? Want To work -->
+  <section class="wantToWork-area w-padding section-bg" data-background="{% static 'img/gallery/section_bg02.png' %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="section-tittle mb-30">
+          <h2 style="font-size: 2.5rem; color: #FFF">NEWSLETTER</h2>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-around">
+        <div class="col-md-5 col-10 mb-20 text-center">
+          <a href="https://online.anyflip.com/scdmr/zvnf/mobile/index.html" target="_blank">
+            <button class="btn" style="width: 70%;">The Connect</button>
+          </a>
+        </div>
+        <div class="col-md-5 col-10 mb-20 text-center">
+          <a href="https://online.fliphtml5.com/yyjoi/mpfb/" target="_blank">
+            <button class="btn" style="width: 70%;">Alumni In Focus</button>
+          </a>
+        </div>
+      </div>
+        <div>
+                <h4 align="center" style="font-size: 1.5rem; color: #FFF">SAIC’s official newsletters that keep the students adequately informed about the world in and around by providing a general overview and also informing them about the achievement's of our Alumni.</h4>
+        </div>
+    </div>
+  </section>
+  <!-- Want To work End -->
+</main>
+
+{% endblock %}

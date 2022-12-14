@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+  <main>
+    <!--? Hero Start -->
+    <div class="slider-area2" align="center">
+      <div class="slider-height2 d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="hero-cap hero-cap2 text-center pt-70">
+                <h2>About Us</h2>
+                <br>
+                <h3 style="color: azure;">
+                  The Student Alumni Interaction Cell is a voluntary student body working under the
+                  aegis of Thapar Institute of Engineering & Technology Alumni Association (TIETAA) &
+                  Dean of Student Affairs (DoSA). The organization was setup with an intent to
+                  encourage alumni interaction with the students of TIET.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!--? About Area Start -->
+    <section class="about-area section-padding30">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <!-- about-img -->
+            <div class="about-img ">
+              <img src="{%static 'img/gallery/abc.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="about-caption">
+              <!-- Section Tittle -->
+              <div class="section-tittle section-tittle3 mb-35">
+                <span>ABOUT THE ARMY OF PROFESSIONALS</span>
+                <h2>“Learning from the best, with the best.”</h2>
+              </div>
+              <p class="mb-20 pera-bottom">The Student Alumni Interaction Cell continuously endeavours to strengthen the relations of the alumni of this Institute and their alma mater.</p>
+              <p class="pera-top">Goals</p>
+              <p class="mb-10 pera-bottom">1.  A platform to intensify the relation between the students and alumni of TIET.</p>
+              <p class="mb-10 pera-bottom">2. Reach out to the Alumni Association by organising Alumni Reunions, Global Leadership Summit and Invited Talks.</p>
+              <p class="mb-20 pera-bottom">3. Strengthen ties between students and alumni affairs, providing them with significant opportunities for their growth and development.</p>
+              <p class="pera-top">Vision</p>
+              <p class="mb-10 pera-bottom">The organization functions with a vision to develop a dynamic student-alumni community committed to establishing connections and strengthening ties between students and alumni, as a result, facilitating the ultimate mission of providing opportunities to the young budding minds for investing in their future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? Gallery Area Start -->
+        <div class="gallery-area">
+            <div class="container-fluid p-0 fix">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img big-img">
+                              <img src="{%static 'img/farewell.png' %}" alt="Farewell" class="anime-img-center">
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <a href="{% url 'AIM' %}"><i class="ti-arrow-top-right"></i></a>
+                                    <h3>Farewell</h3>
+<!--                                    <p>Fitness, Body</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img">
+                                      <img src="{% static 'img/exo.png' %}" alt="Exordium" class="anime-img-center">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="{% url 'exordium' %}"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Exordium</h3>
+<!--                                            <p>Fitness, Body</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img">
+                                      <img src="{%static 'img/troubleshoot.png' %}" alt="Troubleshoot" class="anime-img-center">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="{% url 'troubleshoot' %}"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Troubleshoot</h3>
+<!--                                            <p>Fitness, Body</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img">
+                                      <img src="{%static 'img/gls.png' %}" alt="Global Leadership Summit" class="anime-img-center">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="{% url 'GLS' %}"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Global Leadership Summit</h3>
+<!--                                            <p>Fitness, Body</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img">
+                                      <img src="{%static 'img/scribbleday.png' %}" alt="Scribble Day" class="anime-img-center">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="{% url 'scribble' %}"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Scribble Day</h3>
+<!--                                            <p>Fitness, Body</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery Area End -->
+    <!--? Want To work -->
+    <section class="wantToWork-area w-padding">
+      <div class="container">
+        <div class="row align-items-end justify-content-between">
+          <div class="col-lg-6 col-sm-9">
+            <div class="section-tittle">
+              <span>OUR EXECUTIVE BOARD</span>
+              <h2>Executive Board 2022-2023</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Want To work End -->
+    <!--? Team Ara Start -->
+    <div class="team-area pb-150">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 section-tittle d-lg-none mb-30">
+            <h2 style="font-size: 2.5rem;">PRESIDENT</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img src="{%static 'assets/img/team/manvif.png' %}" alt="">
+                <div class="team-caption">
+                  <h3><a href="#">Manvi Gumber</a></h3>
+                  <!-- Blog Social -->
+                  <div class="team-social">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/manvigumber/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/manvi_gumber/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+            <div class="single-team mb-30">
+              <div class="team-img">
+              <img src="{%static 'assets/img/team/middlefff.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <!--Change the insta of deepanshu sir-->
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img src="{%static 'assets/img/team/dipa.png' %}" alt="">
+                <div class="team-caption">
+                  <h3><a href="#">Dipanshu Goyal</a></h3>
+                  <!-- Blog Social -->
+                  <div class="team-social">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/dipanshu-goyal-b5100b195/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/dipanshu_7/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 section-tittle d-lg-none pt-30 mb-30">
+            <h2 style="font-size: 2.5rem;">VICE PRESIDENT</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img src="{%static 'assets/img/team/anikaf.png' %}" alt="">
+                <div class="team-caption">
+                  <h3><a href="#">Anika Shukla</a></h3>
+                  <!-- Blog Social -->
+                  <div class="team-social">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/anika-shukla-0b311518b/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/anikaashuklaa/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img src="{%static 'assets/img/team/kunalffff.png' %}" alt="">
+                <div class="team-caption">
+                  <h3><a href="#">Kunal Garg</a></h3>
+                  <!-- Blog Social -->
+                  <div class="team-social">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/kunal-garg-5a64a1167/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/kunnuboii/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-team mb-30">
+              <div class="team-img">
+                <img src="{%static 'assets/img/team/tanmayf.png' %}" alt="">
+                <div class="team-caption">
+                  <h3><a href="#">Tanmay Khandelwal</a></h3>
+                  <!-- Blog Social -->
+                  <div class="team-social">
+                    <ul>
+                      <li><a href="https://www.linkedin.com/in/tanmay-khandelwal-2380259a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/tanmay1006/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Ara End -->
+  </main>
+  {% endblock %}

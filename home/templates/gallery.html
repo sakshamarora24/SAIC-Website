@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block head-extension %}
+<link rel="stylesheet" href="{% static 'css/cards.css' %}">
+{% endblock %}
+
+{% block content %}
+<style>
+    body {
+
+        background-color: black;
+    }
+</style>
+    <main>
+        <!--? Hero Start -->
+
+        <div class="slider-area2" align="center">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 text-center pt-70">
+
+                                <h2 class="newh">Events</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <section>
+        	<div class="row">
+        		<div class="col-md-4 col-sm-6 col-xs-12">
+        			<div class="card" style="background-color:black">
+        				<div class="cover item-a">
+        			<!--		<h1>Troubleshoot</h1>-->
+        					<span class="price"></span>
+        					<div class="card-back">
+
+                    <h3 class="flip-par"> Troubleshoot takes you through a simulation of Crisis and Economic Contraction, set within a formal environment which gives the participants the opportunity to experience the work field and make spontaneous decisions to real-time crisis. </h3>
+        				      <a href="{% url 'troubleshoot' %}">Read More</a>
+
+                  </div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="col-md-4 col-sm-6 col-xs-12">
+        			<div class="card" style="background-color:black">
+        				<div class="cover item-g">
+        		<!--			<h1>Global<br>Leadership<br>Summit</h1>-->
+        					<span class="price"></span>
+        					<div class="card-back">
+                      <h3 class="flip-par"> Being the flagship event of the Student Alumni Interaction Cell, the Global Leadership Summit is an innovation conclave bringing to you recognised pioneers from all around the world. The interactions with elite alumni from diverse professional backgrounds provide one of a kind corporate networking platform to students from their very first year. </h3>
+        						<a href="{% url 'GLS' %}">Read More</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style="background-color:black">
+                <div class="cover item-e">
+              <!--    <h1>Exordium</h1>-->
+                  <span class="price"></span>
+                  <div class="card-back">
+                      <h3 class="flip-par"> Exordium, a meet-and-mingle networking event conducted by Student Alumni Interaction Cell is the perfect opportunity for students to interact with the Thapar Alumni and have a gala time. </h3>
+                    <a href="{% url 'exordium' %}">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style="background-color:black">
+                <div class="cover item-b">
+              <!--    <h1>Farewell</h1>-->
+                  <span class="price"></span>
+                  <div class="card-back">
+                      <h3 class="flip-par"> College is the best set of years of a student’s life and farewell marks a milestone in this amazing journey. These four years lead to friends becoming family and the last moments of this time are cherished to the fullest before students part ways and pursue new endeavours. </h3>
+                    <a href="{% url 'AIM' %}">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style="background-color:black">
+                <div class="cover item-c">
+                <!--  <h1>Convocation</h1>-->
+                  <span class="price"></span>
+                  <div class="card-back">
+                      <h3 class="flip-par"> Graduations  deserve to be celebrated. Most mark the occasion with a graduation announcement, because when you’ve kept your nose in the books for that long, your hard work deserves to be broadcasted. </h3>
+                    <a href="{% url 'convocation' %}">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        		<div class="col-md-4 col-sm-6 col-xs-12">
+        			<div class="card" style="background-color:black">>
+        				<div class="cover item-f">
+        				<!--	<h1>Scribble Day</h1>-->
+        					<span class="price"></span>
+        					<div class="card-back">
+                      <h3 class="flip-par"> A myriad of emotions is how anyone would describe their college life as. So, to recollect all those special moments during this 4 year-long journey, every college student passes through the tradition of Scribble Day before bidding adieu to yet another phase of their lives.  </h3>
+        						<a href="{% url 'scribble' %}">Read More</a>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!-- partial -->
+          <script  src="./script.js"></script>
+
+        <!--? Gallery Area Start -->
+      <!--  <div class="gallery-area section-padding30">
+            <div class="container-fluid p-0 fix">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                    <h3>Best fitness gallery</h3>
+                                    <p>Fitness, Body</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Best fitness gallery</h3>
+                                            <p>Fitness, Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Best fitness gallery</h3>
+                                            <p>Fitness, Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Best fitness gallery</h3>
+                                            <p>Fitness, Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="box snake mb-30">
+                                    <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <a href="gallery.html"><i class="ti-arrow-top-right"></i></a>
+                                            <h3>Best fitness gallery</h3>
+                                            <p>Fitness, Body</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Gallery Area End -->
+    </main>
+    {% endblock %}   

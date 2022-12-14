@@ -1,0 +1,308 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<head>
+
+</head>
+
+    <style>
+        iframe {
+            box-shadow: 0 5px 10px rgba(154,160,185,.5),  0 15px 40px rgba(166,173,201,.2);
+            transition: all 0.5s;
+        }
+
+        .blog_item :hover{
+            box-shadow: 0px 0px 0px white;
+        }
+
+        .blog_item_img{
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .blog_item_img iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mediapost_item{
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .mediapost_item iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>Alumni Reflect</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? Blog Area Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <div class="blog_left_sidebar">
+
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDLo0ZAJeH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog_details" style="box-shadow: 0 5px 10px rgba(120, 127, 156, 0.05), 0 15px 40px rgba(155, 165, 206, 0.2);">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Alumni Reflect | Ep. 4 </h2>
+                                    </a>
+                                    <p>Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of
+                                        all love of what you are doing or learning to do. Whenever you see a successful person, you
+                                        only see the public glories, never the private sacrifices to reach them.
+                                        With that in mind SAIC is
+                                        exhilarated to present to you Mr. Vir Sood as our Alumni Reflect speaker for the day.
+                                        Mr. Vir Sood is currently the vice president at JP Morgan Chase and Co. He believes in learning
+                                        about new technologies and keeping himself apprised to the latest tech and is a passionate
+                                        software engineer.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="https://www.linkedin.com/in/virsood/" target="_blank"><i class="fa fa-user"></i> Mr. Vir Sood</a></li>
+                                        <li>Vice President, JP Morgan Chase and Co.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                           
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <iframe class="card-img rounded-0" width="500" height="450" src="https://www.youtube.com/embed/nVZbuk2TvQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog_details" style="box-shadow: 0 5px 10px rgba(120, 127, 156, 0.05), 0 15px 40px rgba(155, 165, 206, 0.2);">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Alumni Reflect | Ep. 3 </h2>
+                                    </a>
+                                    <p>“Passion equals drive, drive equals determination and determination equals success”. 
+                                        SAIC is exhilarated to present Dr Mohit Gupta as the third Alumni Reflect speaker. Dr
+                                        Mohit Gupta is presently a Research Associate/Lecturer at the University of Colorado
+                                        along with being the winner of the prestigious UNESCO - AIRBUS Fly Your Ideas. He
+                                        believes that with perseverance and passion, the ideas you ruminate on would become
+                                        solutions to tomorrow’s problems.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="https://www.linkedin.com/in/amodbansal/" target="_blank"><i class="fa fa-user"></i>Dr. Mohit Gupta</a></li>
+                                        <li>Winner of 'UNESCO AIRBUS FLY YOUR IDEAS' Challenge</li>
+                                    </ul>
+                                </div>
+                            </article>
+                             
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <iframe class="card-img rounded-0" width="500" height="450" src="https://www.youtube.com/embed/4bJ8i2M4BQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog_details" style="box-shadow: 0 5px 10px rgba(120, 127, 156, 0.05), 0 15px 40px rgba(155, 165, 206, 0.2);">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Alumni Reflect | Ep. 2 </h2>
+                                    </a>
+                                    <p>Ambition is the path to success. Persistence is the vehicle you arrive in.
+                                        With that in mind, SAIC proudly presents Mr. Amod Bansal as the second Alumni Reflect speaker. 
+                                        Witness his incredible journey from Thapar Institute of Engineering and Technology alumnus to Special 
+                                        Projects Manager at Xiaomi. It was not just his firm belief in resilience and the creation of a positive 
+                                        outlook, but also his self-assurance and audacity that gave him the confidence to dream big and make 
+                                        them a reality.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="https://www.linkedin.com/in/amodbansal/" target="_blank"><i class="fa fa-user"></i>Mr. Amod Bansal</a></li>
+                                        <li>Special Projects Manager, Xiaomi India</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <iframe class="card-img rounded-0" width="500" height="450" src="https://www.youtube.com/embed/PpXxeW6ZYFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="blog_details" style="box-shadow: 0 5px 10px rgba(120, 127, 156, 0.05), 0 15px 40px rgba(155, 165, 206, 0.2);">
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Alumni Reflect | Ep. 1</h2>
+                                    </a>
+                                    <p>“The art of writing is the art of discovering what you believe.”
+                                        SAIC is elated to announce the speaker for our first episode of Alumni Reflect, Mr. Raghav Ralhan.
+                                        Mr. Ralhan is the author of the book ‘The Ringing Bell’ along with being a Senior Manager at Tata Motors. 
+                                        He believes that any idea becomes valuable with hardwork and a vision to look beyond the ordinary which 
+                                        is the reason why he is not only following his passion but also doing great at his job.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="https://www.linkedin.com/in/ralhanraghav/" target="_blank"><i class="fa fa-user"></i>Mr. Raghav Ralhan</a></li>
+                                        <li>Senior Manager, Tata Motors</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    </a>
+                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </article> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <!-- <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Filter by Branch</h4>
+                                <ul class="list cat-list">
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Chemical Engineering</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Civil Engineering</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Computer Engineering</p>                                    
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Electrical Engineering</p> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Mechanical Engineering</p>                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Mechatronics Engineering</p>                                         
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Electronics Engineering</p>                                           
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Electronics and Computer Engineering</p>                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>Electronics and Communication Engineering</p>                                           
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex">
+                                            <p>BioTech Engineering</p>                                          
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside> -->
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Recent Videos</h3>
+                                <div class="mediapost_item">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6WvsXZJfW0w?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/47ZQqSzD0k8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ONdfkthmjQw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/=Ovi48uD9Lwo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aYwvYw9ATpM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <!-- <div class="mediapost_item">
+                                    <iframe class="latestVideoEmbed" vnum='1' cid="UC0L1-glSWTvDilQlILdD5qw" width="350" height="150" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe class="latestVideoEmbed" vnum='2' cid="UC0L1-glSWTvDilQlILdD5qw" width="350" height="150" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe class="latestVideoEmbed" vnum='3' cid="UC0L1-glSWTvDilQlILdD5qw" width="350" height="150" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="mediapost_item">
+                                    <iframe class="latestVideoEmbed" vnum='4' cid="UC0L1-glSWTvDilQlILdD5qw" width="350" height="150" frameborder="0" allowfullscreen></iframe>
+                                </div> -->
+                            </aside>
+
+                            <aside class="single_sidebar_widget instagram_feeds">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feed</h4>
+                                <div class="taggbox-container" width style="width:90%; height:100%; overflow: auto;">
+                                    <div class="taggbox-socialwall" data-wall-id="59688" view-url="https://widget.taggbox.com/59688">
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+    {% endblock %}
