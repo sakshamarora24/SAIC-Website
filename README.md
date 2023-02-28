@@ -1,1 +1,2 @@
-# Stundent Almuni interation cell site
+## STUDENT ALUMNI INTERACTION CELL Website
+#Thapar University, Patiala
