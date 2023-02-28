@@ -1,2 +1,2 @@
-## STUDENT ALUMNI INTERACTION CELL Website
-# Thapar University, Patiala
+# STUDENT ALUMNI INTERACTION CELL Website
+## Thapar University, Patiala
